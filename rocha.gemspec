@@ -8,6 +8,8 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{RSpec reporter for mocha}
   gem.homepage      = ""
 
+  gem.add_dependency "colorize"
+
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
