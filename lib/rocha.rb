@@ -1,3 +1,4 @@
+require "active_support/core_ext/class/delegating_attributes"
 require "rocha/reporter"
 require "rocha/formatter"
 
