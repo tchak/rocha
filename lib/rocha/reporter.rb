@@ -73,6 +73,14 @@ module Rocha
           @pending_count += 1
       end
 
+      if method == :example_pending
+        call_formatters(:example_started, *args, &block)
+      end
+
+      call_formatters(method, *args, &block)
+    end
+
+    def call_formatters(method, *args, &block)
       @formatters.each do |formatter|
         formatter.send method, *args, &block
       end

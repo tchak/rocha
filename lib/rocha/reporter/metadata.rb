@@ -24,7 +24,8 @@ module Rocha
       end
 
       def file_path
-        data['path']
+        # FIXME: This is needed to not crash in RSpec formatters
+        data['path'] || '<script.js>'
       end
 
       alias_method :location, :file_path
