@@ -29,10 +29,6 @@ module Rocha
       def update_metadata(data)
         metadata.update(data)
       end
-
-      def [](prop)
-        metadata[prop]
-      end
     end
   end
 end
