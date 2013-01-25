@@ -11,6 +11,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency "colorize"
   gem.add_dependency "activesupport"
   gem.add_dependency "rake"
+  gem.add_dependency "rspec-core"
   gem.add_development_dependency "rspec"
 
   gem.files         = `git ls-files`.split($\)
