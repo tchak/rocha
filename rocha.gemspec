@@ -12,7 +12,8 @@ Gem::Specification.new do |gem|
   gem.add_dependency "activesupport"
   gem.add_dependency "rake"
   gem.add_dependency "rspec-core"
-  gem.add_development_dependency "rspec"
+  gem.add_dependency "rspec"
+  gem.add_dependency "nyan-cat-formatter"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
